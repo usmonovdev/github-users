@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+  width: 400px;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box .top {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top input {
+  width: 250px;
+  padding: 5px 5px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  outline: none;
+  border-radius: 6px;
+  color: #c9d1d9;
+}
+
+.top button {
+  padding: 5px;
+  width: 70px;
+  background-color: #21262d;
+  border: 1px solid rgba(240,246,252,0.1);
+  cursor: pointer;
+  color: #c9d1d9;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.bottom img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid #30363d;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom .user {
+  color: #c9d1d9;
+  font-size: 26px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom .username {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 80%;
+}
+
+.bottom .bio {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.bottom .followers {
+  margin-bottom: 6px;
+  font-weight: 300;
+  opacity: 80%;
+}
+
+.followers span {
+  font-weight: 500;
+}
+
+.bottom .location {
+  margin-bottom: 6px;
+}
+
+.bottom .blog a{
+  color: #c9d1d9;
+  text-decoration: none;
+}
+
+.blog a:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+  
+  .box {
+    width: 250px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bottom img {
+    width: 250px;
+    height: 250px;
   }
 }
